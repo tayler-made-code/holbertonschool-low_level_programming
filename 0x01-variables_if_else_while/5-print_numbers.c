@@ -11,10 +11,9 @@
 */
 int main(void)
 {
-	char x;
+	int x;
 
-	for (x = 'z'; x >= 'a'; x--)
-	putchar(x);
-	putchar('\n');
+	for (x = 0; x <= 9; x++)
+		printf("%d\n", x);
 	return (0);
 }
