@@ -13,17 +13,8 @@ int main(void)
 {
 	char x;
 
-	for (x = 'a'; x <= 'z'; x++)
-	{
-		if (x != 'e' && x != 'q')
-		{
-			putchar(x);
-		}
-		else
-		{
-			continue;
-		}
-	}
+	for (x = 'z'; x >= 'a'; x--)
+	putchar(x);
 	putchar('\n');
 	return (0);
 }
