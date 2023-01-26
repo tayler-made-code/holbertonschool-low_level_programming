@@ -2,5 +2,5 @@
 git add .
 echo "Commit Name? "
 read commit_name
-git commit -m '$commit_name'
+git commit -m "$commit_name"
 git push
