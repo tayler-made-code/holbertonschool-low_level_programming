@@ -14,7 +14,7 @@ int main(void)
 	char x;
 	char d;
 
-	for (x = 'z'; x >= 'a'; x--)
+	for (x = 'a'; x <= 'z'; x++)
 	putchar(x);
 
 	for (d = 'A'; d <= 'Z'; d++)
