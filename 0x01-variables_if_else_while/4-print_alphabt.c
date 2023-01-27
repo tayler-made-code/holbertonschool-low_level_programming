@@ -1,5 +1,5 @@
 /*
-* file: 3-print_alphabets.c
+* file: 4-print_alphabt.c
 *
 */
 #include <stdio.h>
