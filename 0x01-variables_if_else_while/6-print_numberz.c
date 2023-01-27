@@ -1,5 +1,5 @@
 /*
-* file: 3-print_alphabets.c
+* file: 6-print_numberz.c
 *
 */
 #include <stdio.h>
@@ -13,7 +13,7 @@ int main(void)
 {
 	char x;
 
-	for (x = 'z'; x >= 'a'; x--)
+	for (x = '0'; x >= '9'; x++)
 	putchar(x);
 	putchar('\n');
 	return (0);
