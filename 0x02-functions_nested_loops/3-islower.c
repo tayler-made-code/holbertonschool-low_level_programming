@@ -1,23 +1,17 @@
-/*
-* file: 3-islower.c
-*
-*/
 #include "main.h"
 /**
-* print_alphabet_x10 - Entry point
-* Description: prints alphabet
-* Return 0
+* _islower - Entry point
+* @c: lower case letters
+* Return: 1 for true, 0 for false
 */
 int _islower(int c)
 {
 	if (c > 97 && c <= 122)
 	{
-		return(1);
+		return (1);
 	}
 	else
 	{
-		return(0);
+		return (0);
 	}
-
-	return(0);
 }
