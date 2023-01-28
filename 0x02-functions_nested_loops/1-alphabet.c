@@ -1,7 +1,3 @@
-/*
-* file: 1-alphabet.c
-*
-*/
 #include "main.h"
 /**
 * print_alphabet - Entry point
