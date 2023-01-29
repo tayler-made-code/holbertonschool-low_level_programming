@@ -4,10 +4,20 @@
 * @n: check last digit
 * Return: last digit only
 */
-int print_last_digit(int n)
+int print_last_digit(int)
 {
-	int r;
+	int n;
 
-	r = ((n % 10));
-	return (r);
+	if (n > 0)
+	{
+		return ((n % 10));
+	}
+	else if (n < 0)
+	{
+		return (((n * -1) % 10));
+	}
+	else
+	{
+		return (0);
+	}
 }
