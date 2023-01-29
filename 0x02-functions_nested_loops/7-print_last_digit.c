@@ -1,13 +1,11 @@
 #include "main.h"
 /**
 * print_last_digit - Entry point
-* @n: 
+* @n: check last digit
 * Return: last digit only
 */
-int print_last_digit(int)
+int print_last_digit(int n);
 {
-	int = n
-
-	r = (n % 10)
-	return (r);	
+	r = (n % 10);
+	return (r);
 }
