@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-* add - Entry point
-* @n: check last digit
-* Return: last digit only
+* add - Entry point 
+* Return: x + y
 */
 int add(int x, int y)
 {
