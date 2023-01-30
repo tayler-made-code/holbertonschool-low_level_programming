@@ -1,9 +1,8 @@
 #include "main.h"
 /**
 * add - Entry point
-*
-* Description: get sum of x+y
-*
+* @x: first number
+* @y: second number
 * Return: o = sum of x+y
 */
 int add(int x, int y)
