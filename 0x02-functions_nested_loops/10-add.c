@@ -20,6 +20,6 @@ int add(int x, int y)
 	}
 	else
 	{
-		continue;
+		return(0);
 	}
 }
