@@ -11,15 +11,15 @@ int add(int x, int y)
 	o = (x + y);
 	if (o < 10)
 	{
-		return(o);
+		return (o);
 	}
 	else if (o > 10)
 	{
 		_putchar((o / 10) + '0');
-		return((o % 10) + '0');
+		return ((o % 10) + 0);
 	}
 	else
 	{
-		return(0);
+		return (0);
 	}
 }
