@@ -1,7 +1,8 @@
 #include "main.h"
 /**
-* add - Entry point 
-* Return: x + y
+* add - Entry point
+* @n - x = number 1 y = number 2
+* Return: o = sum of x+y
 */
 int add(int x, int y)
 {
