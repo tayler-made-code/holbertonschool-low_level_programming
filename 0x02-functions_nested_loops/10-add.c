@@ -1,7 +1,9 @@
 #include "main.h"
 /**
 * add - Entry point
-* @x & @y: check for two intergers
+*
+* Description: get sum of x+y
+*
 * Return: o = sum of x+y
 */
 int add(int x, int y)
