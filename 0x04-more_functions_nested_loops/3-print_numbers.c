@@ -2,7 +2,7 @@
 /**
 * print_numbers - Entry point
 *
-* Return: a * b
+* Return: 0..9
 */
 void print_numbers(void)
 {
