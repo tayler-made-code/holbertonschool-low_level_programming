@@ -1,8 +1,7 @@
 #include "main.h"
 /**
 * print_numbers - Entry point
-* @a: gets 1st int for multiplication
-* @b: gets 2nd int for multiplication
+*
 * Return: a * b
 */
 void print_numbers(void)
