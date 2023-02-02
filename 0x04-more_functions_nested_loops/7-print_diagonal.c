@@ -2,14 +2,26 @@
 /**
 * print_diagonal - Entry point
 * @n: check for interger
-* Return: a _ for each interger
+* Return: \ for each interger
 */
 void print_diagonal(int n)
 {
-	while (n > 0)
+	int lines, spaces;
+
+	if (n > 0)
 	{
-		_putchar('\\');
-		n--;
+	for (lines = 0; lines < n; lines++)
+		{
+			for (spaces = 0; spaces < lines; spaces++)
+			{
+				_putchar(' ');
+			}
+		_putchar ('\\');
+		_putchar ('\n');
+		}
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
