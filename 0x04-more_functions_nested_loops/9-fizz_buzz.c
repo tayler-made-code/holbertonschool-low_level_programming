@@ -1,26 +1,44 @@
-#include "main.h"
+#include <stdio.h>
 /**
-* print_square - Entry point
-* @size: check for interger
-* Return: # in a size x size pattern
+* main - count 1..100 replace multiples of 3 and/or 5
 */
-void print_square(int size)
+void main(void)
 {
-	int lines, h;
+	int i;
 
-	if (size > 0)
+	for (i = 1; i <= 101; i++)
 	{
-		for (lines = 0; lines < size; lines++)
+		if (i <= 100)
 		{
-			for (h = 0; h < size; h++)
+			if ((i % 3) == 0 && (i % 5) != 0)
 			{
-				_putchar('#');
+				printf("Fizz");
 			}
-		_putchar ('\n');
+			else if ((i % 5) == 0 && (i % 3) != 0)
+			{
+				printf("Buzz");
+			}
+			else if ((i % 3) == 0 && (i % 5) == 0)
+			{
+				printf("FizzBuzz");
+			}
+			else
+			{
+				printf("%i", i);
+			}
+			if (i < 100)
+			{
+				printf(" ");
+			}
+			else
+			{
+				continue;
+			}
+
 		}
-	}
-	else
-	{
-		_putchar('\n');
+		else
+		{
+			printf("\n");
+		}
 	}
 }
