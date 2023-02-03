@@ -1,6 +1,11 @@
 #include <stdio.h>
+
 /**
-* main - count 1..100 replace multiples of 3 and/or 5
+* main - Entry point
+*
+* Description: prints 1..100 and replaces multiples of 3 and/or 5
+*
+* Return - Always 0
 */
 int main(void)
 {
@@ -41,5 +46,5 @@ int main(void)
 			printf("\n");
 		}
 	}
-	return(0);
+	return (0);
 }
