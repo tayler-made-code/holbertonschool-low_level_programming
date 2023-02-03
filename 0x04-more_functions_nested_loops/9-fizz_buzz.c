@@ -2,12 +2,11 @@
 #include "main.h"
 
 /**
-* main - Entry point
-*
-* Description: prints 1..100 and replaces multiples of 3 and/or 5
-*
-* Return - Always 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+
 int main(void)
 {
 	int i;
