@@ -2,7 +2,7 @@
 /**
 * main - count 1..100 replace multiples of 3 and/or 5
 */
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -41,4 +41,5 @@ void main(void)
 			printf("\n");
 		}
 	}
+	return(0);
 }
