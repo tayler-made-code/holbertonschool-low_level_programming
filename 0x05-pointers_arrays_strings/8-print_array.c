@@ -4,7 +4,7 @@
  * print_array - Entry point
  * @a: get string
  * @n: get number of elements
- * Return: 
+ * Return: array with , and space
  */
 
 void print_array(int *a, int n)
