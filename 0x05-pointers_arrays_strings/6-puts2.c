@@ -3,7 +3,7 @@
 /**
  * puts2 - Entry point
  * @str: get string
- * Return: s_r_n_ 
+ * Return: s_r_n_
  */
 
 void puts2(char *str)
