@@ -1,7 +1,7 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-* char *_strncpy - Entry point
+* *_strncpy - Entry point
 * @dest:
 * @src:
 * @n:

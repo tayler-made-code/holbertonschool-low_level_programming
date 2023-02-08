@@ -1,14 +1,13 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
 * _strcmp - Entry point
-* @dest:
-* @src:
-* @n:
-* Return:
+* @s1:
+* @s2:
+* Return: int
 */
 
-char *_strcmp(char *s1, char *s2)
+int *_strcmp(char *s1, char *s2)
 {
 	
 }

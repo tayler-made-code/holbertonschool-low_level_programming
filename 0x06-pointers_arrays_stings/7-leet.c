@@ -1,9 +1,9 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
 * *leet - Entry point
 * @*:
-* Return:
+* Return: char
 */
 
 char *leet(char *)

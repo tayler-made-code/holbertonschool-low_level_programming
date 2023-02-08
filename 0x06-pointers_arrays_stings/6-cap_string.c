@@ -1,9 +1,9 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
 * *cap_string - Entry point
 * @*:
-* Return:
+* Return: char
 */
 
 char *cap_string(char *)

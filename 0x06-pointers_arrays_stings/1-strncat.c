@@ -1,9 +1,10 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
 * char *_strncat - Entry point
 * @dest:
 * @src:
+* @n:
 * Return:
 */
 
