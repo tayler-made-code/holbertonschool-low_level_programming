@@ -9,7 +9,6 @@
 
 char *_strcat(char *dest, char *src)
 {
-/* dest is s1(Hello )(7 with null), src is s2("World!\n") */
 	int d = 6;
 	int i;
 
