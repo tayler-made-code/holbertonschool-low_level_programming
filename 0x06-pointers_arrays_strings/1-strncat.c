@@ -2,7 +2,7 @@
 
 /**
 * *_strncat - Entry point
-* @dest: add src[n] to end of dest string
+* @dest: add src to the n'th of dest string
 * @src: get string
 * @n: get integer
 * Return: dest
@@ -18,7 +18,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (d = 0; d < n; d++)
 	{
-		dest[i + d] = src[d]
+		dest[i + d] = src[d];
 		if (src[d] == '\0')
 		{
 			d = n;
