@@ -2,12 +2,20 @@
 
 /**
 * reverse_array - Entry point
-* @a:
-* @n:
-* Return:
+* @a: an array of integers
+* @n: the number of elements to swap
+* Return: y, a, r, r, a
 */
 
 void reverse_array(int *a, int n)
 {
-	
+	int temp;
+	int i;
+
+	for (i = 0; i < (n / 2); i++)
+	{
+		temp = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = temp;
+	}
 }
