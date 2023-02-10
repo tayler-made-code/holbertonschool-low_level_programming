@@ -2,9 +2,9 @@
 
 /**
 * *_strncpy - Entry point
-* @dest: 
+* @dest: send result here
 * @src: get string
-* @n: number of 
+* @n: number of characters to copy
 * Return: destination
 */
 
@@ -30,5 +30,5 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = '\0';
 		i++;
 	}
-	
+
 }
