@@ -1,16 +1,20 @@
 #include "main.h"
 
 /**
-* _memset - Entry point
-* @s: 
-* @b: 
-* @n: 
+* _memcpy - Entry point
+* @dest: destination memory
+* @src: source memory
+* @n: number of bytes to copy
 * Return: dest
 */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
-	
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
 }
