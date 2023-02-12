@@ -1,16 +1,21 @@
 #include "main.h"
 
 /**
-* _memset - Entry point
-* @s: 
-* @b: 
-* @n: 
-* Return: dest
+* _strchr - Entry point
+* @s: get string
+* @c: character to look for
+* Return: first occurence of the character or NULL
 */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_strchr(char *s, char c)
 {
-	int i;
-
-	
+	while (*s != '\0')
+	{
+		if (*s == c)
+		{
+			return ((char *) s);
+		}
+		s++;
+	}
+	return (NULL);;
 }
