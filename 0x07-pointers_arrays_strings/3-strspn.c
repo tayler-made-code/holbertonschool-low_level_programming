@@ -8,9 +8,13 @@
 * Return: dest
 */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memsetlolo(char *s, char b, unsigned int n)
 {
 	int i;
 
-	
+	for (i = 0; s[i] )
+	{
+		
+	}
+	return (i);
 }
