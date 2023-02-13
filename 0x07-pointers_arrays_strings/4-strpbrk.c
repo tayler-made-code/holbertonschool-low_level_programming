@@ -1,16 +1,13 @@
 #include "main.h"
 
 /**
-* _memset - Entry point
+* _strpbrk - Entry point
 * @s: 
-* @b: 
-* @n: 
+* @accept: 
 * Return: dest
 */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char *accept)
 {
 	int i;
-
-	
 }
