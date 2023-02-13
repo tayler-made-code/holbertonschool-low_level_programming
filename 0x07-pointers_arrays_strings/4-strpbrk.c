@@ -2,12 +2,27 @@
 
 /**
 * _strpbrk - Entry point
-* @s: 
-* @accept: 
-* Return: dest
+* @s: get string
+* @accept: get characters to seek out
+* Return: string from first accept onwards
 */
 
-char *_memset(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	const char *temp;
+
+	while (*s != '\0')
+	{
+		temp = accept;
+		while (*temp != '\0')
+		{
+			if (*s == *temp)
+			{
+				return ((char *) s);
+			}
+			temp++;
+		}
+		s++;
+	}
+	return ('\0');
 }
