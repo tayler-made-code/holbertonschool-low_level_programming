@@ -1,16 +1,21 @@
 #include "main.h"
 
 /**
-* _memset - Entry point
-* @s: 
-* @b: 
-* @n: 
-* Return: dest
+* print_chessboard - Entry point
+* @a: pieces
+* Return: void
 */
 
-char *_memset(char *s, char b, unsigned int n)
+void print_chessboard(char (*a)[8])
 {
-	int i;
+	int row, col;
 
-	
+	for (col = 0; col < 8; col++)
+	{
+		for (row = 0; row < 8; row++)
+		{
+			_putchar(a[col][row]);
+		}
+		_putchar('\n');
+	}
 }
