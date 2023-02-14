@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* *_strcat - Entry point
+* _strcat - Entry point
 * @dest: add src to end of dest string
 * @src: get string
 * Return: dest
@@ -11,7 +11,7 @@ char *_strcat(char *dest, char *src)
 {
 	int i, d;
 
-	while (i = 0; dest[i] != '\0'; i++)
+	for (i = 0; dest[i] != '\0'; i++)
 	{
 	}
 	for (d = 0; (dest[i + d] = *src++) != '\0'; d++)

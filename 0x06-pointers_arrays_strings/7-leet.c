@@ -20,6 +20,7 @@ char *leet(char *str)
 			if (str[i] == seek[x])
 			{
 				str[i] = destroy[x / 2];
+				break;
 			}
 			x++;
 		}
