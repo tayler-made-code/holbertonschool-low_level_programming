@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _pow_recursion - Add a description of the function
-* @x: 
-* @y: 
-* Return: 
+* _pow_recursion - find what the power of y is for x
+* @x: get int for base
+* @y: get int for exponent
+* Return: x multipled by x y times
 */
 
 int _pow_recursion(int x, int y)
@@ -15,10 +15,10 @@ int _pow_recursion(int x, int y)
 	}
 	else if (y == 0)
 	{
-		return (x);
+		return (1);
 	}
-	else if (y > 0)
+	else
 	{
-		return (x * _pow_recursion(y - 1);
+		return (x * _pow_recursion(x, y - 1));
 	}
 }
