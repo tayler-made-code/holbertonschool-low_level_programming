@@ -1,13 +1,16 @@
 #include "main.h"
 
 /**
-* FunctionName - Add a description of the function
-* @s: 
-* @b: 
-* Return: 
+* _print_rev_recursion - get string and return in reverse
+* @s: get string
+* Return: gnirts recurively
 */
 
-void FunctionName(char *s)
+void _print_rev_recursion(char *s)
 {
-	start coding here
+	if (*s != '\0')
+	{
+		_print_rev_recursion(s + 1);
+		putchar(*s);
+	}
 }
