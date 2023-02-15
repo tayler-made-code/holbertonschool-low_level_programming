@@ -1,13 +1,19 @@
 #include "main.h"
 
 /**
-* FunctionName - Add a description of the function
-* @s: 
-* @b: 
-* Return: 
+* _strlen_recursion - Add a description of the function
+* @s: get string
+* Return: Length of string
 */
 
-void FunctionName(char *s)
+int _strlen_recursion(char *s)
 {
-	start coding here
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	else
+	{
+		return (1 + _strlen_recursion(s + 1));
+	}
 }
