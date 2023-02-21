@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
 * _strdup - Add a description of the function
@@ -11,37 +10,47 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int end1, end2, i = 0;
-	char *array;
+	int i = 0, j = 0, k = 0, l = 0;
+	char *str;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		s1 = s2 = "";
+		s1 = "";
 	}
-	for (end1 = 0; end1 <= *s1; end1++)
+	if (s2 == NULL)
 	{
+		s2 = "";
 	}
-	for (end2 = 0; end2 <= *s2; end2++)
+	while (s1[i])
 	{
+		i++;
 	}
-	array = malloc(sizeof(char) * (end1 + end2 + 1));
+	while (s2[j])
+	{
+		j++;
+	}
+	l = i + j;
+	str = malloc(sizeof(char) + 1);
 
-	if (array == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-	while (*s1)
-	{
-		array[i] = *s1;
-		i++;
-		s1++;
-	}
-	while (*s2)
-	{
-		array[i] = *s2;
-		i++;
-		s2++;
-	}
-	return (array);
+	j = 0;
 
+	while (k < l)
+	{
+		if (k <= i)
+		{
+			str[k] = s1[k];
+		}
+		if (k >= i)
+		{
+			str[k] = s2[j];
+			j++;
+		}
+		k++;
+	}
+	str[k] = '\0';
+	return (str);
 }
