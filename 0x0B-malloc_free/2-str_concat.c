@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-* _strdup - Add a description of the function
+* str_concat - Add a description of the function
 * @s1: get string
 * @s2: get string
 * Return: string string
@@ -13,13 +13,9 @@ char *str_concat(char *s1, char *s2)
 	int i = 0, j = 0, k = 0, l = 0;
 	char *str;
 
-	if (s1 == NULL)
+	if (s1 == NULL || s2 == NULL)
 	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
+		s1 = s2 = "";
 	}
 	while (s1[i])
 	{
@@ -30,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 	l = i + j;
-	str = malloc(sizeof(char) + 1);
+	str = malloc((sizeof(char) * 1) + 1);
 
 	if (str == NULL)
 	{
