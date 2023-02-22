@@ -1,1 +1,3 @@
+#define OBJECT_LIKE_MACRO
+
 #define BUFSIZE 1024
