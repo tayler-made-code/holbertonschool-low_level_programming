@@ -37,10 +37,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (strOut = 0; strOut < i; strOut++)
 		arr[strOut] = s1[strOut];
 
-	for (strOut2 = 0; strOut2 < j; strOut2++)
+	for (strOut2 = 0; strOut < j; strOut2++)
 	{
 		arr[strOut] = s2[strOut2];
 		strOut++;
 	}
+	arr[strOut] = '\0';
 	return (arr);
 }
