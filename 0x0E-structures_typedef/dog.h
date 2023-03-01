@@ -8,6 +8,15 @@
 
 int _putchar(char c);
 
+/**
+ * struct dog - dogs info
+ * @name: get dog name
+ * @age: get dogs age
+ * @owner: get dogs owner name
+ *
+ * Description: get all dogs information
+ */
+
 struct dog
 {
 	char *name;
