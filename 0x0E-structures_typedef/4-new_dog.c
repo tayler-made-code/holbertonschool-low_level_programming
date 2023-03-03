@@ -1,6 +1,8 @@
 #include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
+int get_len(int i);
+char *str_cpy(char *dest, char *src);
 /**
  * new_dog - change dog info
  * @name: get dog name
