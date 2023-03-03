@@ -5,7 +5,7 @@
 * print_name - Add a description of the function
 * @name: get string
 * @f: function pointer
-* Return: pointer to function 
+* Return: pointer to function
 */
 
 void print_name(char *name, void (*f)(char *))
