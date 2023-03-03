@@ -1,6 +1,5 @@
 #include "dog.h"
-int get_len(int i);
-char *str_cpy(char*dest, char *src);
+#include <stdlib.h>
 /**
  * new_dog - change dog info
  * @name: get dog name
@@ -8,7 +7,6 @@ char *str_cpy(char*dest, char *src);
  * @owner: get dog owners name
  * Return: new_name
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_name;
