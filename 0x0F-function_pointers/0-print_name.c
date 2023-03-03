@@ -4,7 +4,7 @@
 /**
 * print_name - Add a description of the function
 * @name: get string
-* @f: 
+* @f: function pointer for 
 * Return: 
 */
 
