@@ -1,5 +1,6 @@
 #include "dog.h"
-
+int get_len(int i);
+char *str_cpy(char*dest, char *src);
 /**
  * new_dog - change dog info
  * @name: get dog name
@@ -16,9 +17,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	new_name = malloc(sizeof(dog_t));
 	if (name == NULL)
-	{
 		return (NULL);
-	}
+
 	if (name == NULL || age <= 0 || owner == NULL)
 	{
 		free(new_name);
