@@ -23,7 +23,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			if (stop > 0)
 			{
-				printf("%i%s", va_arg(args, int), separator);
+				printf("%i", va_arg(args, int));
+				if (!separator)
+				{
+					continue;
+				}
+				else
+				{
+					printf("%s", separator);
+				}
 			}
 			if (stop == 0)
 			{
