@@ -10,34 +10,24 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int stop = n;
+	unsigned int i;
 	va_list args;
 
+	if (separator == NULL)
+	{
+		separator = "";
+	}
 	va_start(args, n);
 	{
-		if (!separator)
+		for (i = 0; i < n; i++)
 		{
-			separator = "";
-		}
-		while (stop--)
-		{
-			if (stop > 0)
+			printf("%i", va_arg(args, int));
+			if (i != (n - 1))
 			{
-				printf("%i", va_arg(args, int));
-				if (!separator)
-				{
-					continue;
-				}
-				else
-				{
-					printf("%s", separator);
-				}
+				printf("%s", separator);
 			}
-			if (stop == 0)
-			{
-				printf("%i\n", va_arg(args, int));
-			}
-		}
+		}	
 	}
+	printf("\n");
 	va_end(args);
 }
