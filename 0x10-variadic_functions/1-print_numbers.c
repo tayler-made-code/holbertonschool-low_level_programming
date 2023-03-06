@@ -23,7 +23,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		{
 			if (stop > 0)
 			{
-				printf("%i%s",va_arg(args, int), separator);
+				printf("%i%s", va_arg(args, int), separator);
 			}
 			if (stop == 0)
 			{
@@ -32,5 +32,4 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 	}
 	va_end(args);
-	return;
 }
