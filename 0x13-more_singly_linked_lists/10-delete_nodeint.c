@@ -1,6 +1,27 @@
 #include "lists.h"
 
 /**
+ * listint_len - count elements
+ * @h: pointer to head
+ * Return: number of nodes
+ */
+
+size_t listint_len(const listint_t *h)
+{
+	int node_num = 0;
+
+	if (h == NULL)
+		return (0);
+
+	while (h != NULL)
+	{
+		h = h->next;
+		node_num++;
+	}
+	return (node_num);
+}
+
+/**
  * delete_nodeint_at_index - deletes the tode at index location
  * @head: pointer to pointer of head of listint_t
  * @index: location of node to be deleted
@@ -9,36 +30,30 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	unsigned int count = 0;
-
-	listint_t *copy;
+	unsigned int i;
 	listint_t *temp;
+	listint_t *delete;
 
-	if (*head == NULL)
+	if (*head == NULL || index >= listint_len(*head))
 		return (-1);
-
-	copy = *head;
 
 	if (index == 0)
 	{
-		temp = copy->next;
-		free(copy);
-		*head = temp;
+		delete = *head;
+		*head = (*head)->next;
+		free(delete);
 		return (1);
 	}
+	temp = *head;
+	for (i = 0; temp != NULL && i < index - 1; i++)
+		temp = temp->next;
 
-	while (copy != NULL)
-	{
-		if (count + 1 == index)
-		{
-			temp = copy->next;
-			copy->next = temp->next;
-			free(temp);
-			return (1);
-		}
-		if (copy->next != NULL)
-			copy = copy->next;
-		count++;
-	}
-	return (-1);
+	if (temp == NULL || temp->next == NULL)
+		return (-1);
+
+	delete = temp->next;
+	temp->next = delete->next;
+	free(delete);
+
+	return (1);
 }
