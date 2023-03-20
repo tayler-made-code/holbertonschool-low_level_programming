@@ -6,9 +6,9 @@
  * Return: string length
  */
 
-int _strlen(const char *s)
+unsigned int _strlen(const char *s)
 {
-	int length = 0;
+	unsigned int length = 0;
 
 	while (s[length] != '\0')
 	{
