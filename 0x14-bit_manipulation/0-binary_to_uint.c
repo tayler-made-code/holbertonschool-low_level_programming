@@ -6,7 +6,7 @@
  * Return: string length
  */
 
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int length = 0;
 
@@ -26,12 +26,10 @@ int _strlen(char *s)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int val = 0;
-	int i = 0, slen;
+	int i = 0, slen = _strlen(b);
 
 	if (b == NULL)
 		return (0);
-
-	slen = _strlen(b)
 
 	while (b[i] == '0' || b[i] == '1')
 	{
