@@ -17,13 +17,13 @@ size_t print_dlistint_backward(const dlistint_t *h)
 	while (current->next != NULL)
 	{
 		current = current->next;
-		count++;
 	}
 
 	while (current != NULL)
 	{
 		printf("%d\n", current->n);
 		current = current->prev;
+		count++;
 	}
 	return (count);
 }
