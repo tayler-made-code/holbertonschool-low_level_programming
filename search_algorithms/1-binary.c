@@ -27,22 +27,22 @@ int binary_search(int *array, size_t size, int value)
 		printf("\n");
 
 
-		// Check if the value is present at the middle
+		/* Check if the value is present at the middle */
 		if (array[mid] == value) {
 			return mid;
 		}
 
-		// If the value is smaller, ignore the right half
+		/* If the value is smaller, ignore the right half */
 		else if (array[mid] > value) {
 			upper = mid - 1;
 		}
 
-		// If the value is larger, ignore the left half
+		/* If the value is larger, ignore the left half */
 		else {
 			lower = mid + 1;
 		}
 	}
 
-	// If the value is not present in the array
+	/* If the value is not present in the array */
 	return -1;
 }
