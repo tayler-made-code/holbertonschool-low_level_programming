@@ -15,11 +15,13 @@ int binary_search(int *array, size_t size, int value)
 	int upper = size - 1;
 	int i;
 
-	while (lower <= upper) {
-		int mid = (lower + upper)/ 2;
+	while (lower <= upper)
+	{
+		int mid = (lower + upper) / 2;
 
 		printf("Searching in array: ");
-		for (i = lower; i <= upper; i++) {
+		for (i = lower; i <= upper; i++) 
+		{
 			printf("%d", array[i]);
 			if (i != upper)
 				printf(", ");
@@ -28,21 +30,18 @@ int binary_search(int *array, size_t size, int value)
 
 
 		/* Check if the value is present at the middle */
-		if (array[mid] == value) {
-			return mid;
-		}
+		if (array[mid] == value) 
+			return (mid);
 
 		/* If the value is smaller, ignore the right half */
-		else if (array[mid] > value) {
+		else if (array[mid] > value) 
 			upper = mid - 1;
-		}
 
 		/* If the value is larger, ignore the left half */
-		else {
+		else 
 			lower = mid + 1;
-		}
 	}
 
 	/* If the value is not present in the array */
-	return -1;
+	return (-1);
 }
