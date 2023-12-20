@@ -1,1 +1,1 @@
-What is the space complexity (worst case) of an iterative linear search algorithm in an array of size n?What is the time complexity (worst case) of a binary search in an array of size n?
+O(n^2)

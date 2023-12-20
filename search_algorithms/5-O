@@ -1,1 +1,1 @@
-What is the space complexity (worst case) of a binary search in an array of size n?
+O(nm)
